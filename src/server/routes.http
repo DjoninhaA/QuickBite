@@ -1,0 +1,29 @@
+POST  http://localhost:3333/pedido
+Content-Type: application/json
+
+{
+    "title": "produto 40",
+    "description": "alface",
+    "price": "8"
+}
+
+###
+
+GET  http://localhost:3333/pedido
+
+
+###
+
+PUT   http://localhost:3333/pedido/8914e6d1-4412-4a9e-8de0-a278481036ed
+Content-Type: application/json
+
+{
+    "title": "produto 11",
+    "description": "teste",
+    "price": "5"
+}
+
+
+###
+
+DELETE  http://localhost:3333/pedido/f9ae33b8-c6d2-41c8-927b-81d13e2d1645
