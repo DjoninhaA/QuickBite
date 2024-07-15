@@ -21,14 +21,12 @@ const { title, description, price} = request.body
 })
 
 
-
 server.get('/pedido', async (request) => {
     const search = request.query.search
     const pedido = await database.list(search)
 
     return pedido
 })
-
 
 
 server.put('/pedido/:id', async (request, reply) => {
