@@ -36,6 +36,6 @@ export class DatabasePostgres {
 
     async delete(id){
         await sql` delete from produto WHERE id = ${id}`
-        
+
     }
 }
